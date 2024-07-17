@@ -11,6 +11,7 @@
       padding: 0;
 }
 
+/* style for banner section */
 .navbar,
 .banner {
       max-width: 1440px;
@@ -61,9 +62,11 @@
       letter-spacing: 0px;
       text-align: left;
 }
-.influence{
+
+.influence {
       text-align: center;
 }
+
 .banner-description {
       padding-top: 5px;
       color: rgb(58, 58, 58);
@@ -75,7 +78,7 @@
 }
 
 .btn-banner {
-      width: 196px;
+      max-width: 196px;
       height: 44px;
       border-radius: 41px;
       background: rgb(224, 44, 109);
@@ -89,7 +92,9 @@
       margin-right: 30px;
       max-width: 29.68rem;
       height: 475px;
-      background-image: url("../images/Circle\ design.svg");
+      background-image: url("../images/Circledesign.svg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
 }
 
 .banner-image img {
@@ -107,24 +112,171 @@
       grid-template-columns: repeat(7, 1fr);
 }
 
+/* style for popular section; */
+.popular {
+      max-width: 1047px;
+      margin: 30px auto;
+      border: 1px solid red;
+      border-style: none;
+}
+
+.popular-head {
+      text-align: center;
+      color: rgb(58, 58, 58);
+      font-family: Poppins;
+      font-size: 1.75rem;
+      font-weight: 600;
+      line-height: 70px;
+      letter-spacing: 0px;
+}
+
+/* style for card */
+
+.card-items {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin: 0 10px;
+      gap: 30px;
+}
+
+card-item {
+      max-width: 329px;
+
+      border-radius: 5px;
+      box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+      background: rgb(255, 255, 255);
+      padding: 10px 10px;
+}
+
+.card-img {
+      width: 100%;
+      height: 60%;
+
+}
+
+.img-title {
+      color: rgb(24, 25, 31);
+      font-family: Poppins;
+      font-size: 1.75rem;
+      font-weight: 500;
+      line-height: 40px;
+      letter-spacing: 0%;
+}
+
+.price {
+      color: rgba(0, 0, 0, 0.87);
+      font-size: 1.5rem;
+      font-weight: 400;
+      line-height: 150%;
+      letter-spacing: 0%;
+}
+
+.rating i {
+      /* Orange / 60 */
+      background: rgb(251, 130, 0);
+}
+
+.rating span {
+      color: rgb(94, 99, 102);
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 22px;
+      letter-spacing: 0.1px;
+}
+
+.img-description {
+      color: rgb(120, 120, 133);
+      font-family: Inter;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 143%;
+      letter-spacing: 1.8%;
+}
+
+.more-link {
+      color: rgba(224, 44, 109, 0.87);
+      font-family: Poppins;
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 0px;
+      text-decoration: none;
+      margin-top: 10px;
+      text-align: left;
+}
+
 /* media quaries for mobile  */
 @media screen and (max-width:576px) {
-      .navbar{
+      .navbar {
             flex-direction: column-reverse;
             margin-bottom: 0px;
       }
-      .banner-title{
+
+      .nav-links {
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+      }
+
+      .banner-title {
             text-align: center;
       }
-      .banner-description{
+
+      .banner-image {
+            width: 100%;
+            margin-right: 0px;
+      }
+
+      .banner-description {
             text-align: center;
       }
-      .banner-item{
+
+      .banner-item {
             flex-direction: column-reverse;
             text-align: center;
       }
-      .banner-sponsar{
-            grid-template-columns: repeat(4,1fr);
+
+      .banner-sponsar {
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0px;
+            margin-left: 0px;
+            row-gap: 20px;
+      }
+
+      .card-items {
+            grid-template-columns: repeat(1, 1fr);
+            justify-items: center;
+      }
+}
+
+/* media quaries for tablet */
+@media screen and (min-width:576px) and (max-width:993px) {
+      .navbar {
+            flex-direction: column-reverse;
+            margin-bottom: 0px;
+      }
+
+      .nav-links {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+      }
+
+      .banner-title {
+            text-align: center;
+      }
+
+      .banner-description {
+            text-align: center;
+      }
+
+      .banner-item {
+            flex-direction: column-reverse;
+            text-align: center;
+      }
+
+      .banner-sponsar {
+            grid-template-columns: repeat(4, 1fr);
             gap: 0px;
             margin-left: 0px;
             row-gap: 20px;
