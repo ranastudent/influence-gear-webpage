@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.poppins-regular {
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+}
+
+* {
+      margin: 0;
+      padding: 0;
+}
+
+.navbar,
+.banner {
+      max-width: 1440px;
+      margin: 0 auto;
+      margin-top: 70px;
+}
+
+/* shared styles */
+.display-flex {
+      display: flex;
+}
+
+/* header styles */
+
+/* navbar relatated styles */
+.navbar {
+      justify-content: space-between;
+}
+
+.nav-item {
+      list-style: none;
+      margin-right: 34px;
+}
+
+.nav-link {
+      text-decoration: none;
+      color: rgb(58, 58, 58);
+      font-family: Poppins;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 24px;
+      letter-spacing: 0px;
+}
+
+/* banner related styles */
+.banner-item {
+      margin-top: 100px;
+      justify-content: space-between;
+}
+
+
+.banner-title {
+      color: rgb(58, 58, 58);
+      font-family: Poppins;
+      font-size: 3.25rem;
+      font-weight: 700;
+      line-height: 4.35rem;
+      letter-spacing: 0px;
+      text-align: left;
+}
+.influence{
+      text-align: center;
+}
+.banner-description {
+      padding-top: 5px;
+      color: rgb(58, 58, 58);
+      font-family: Poppins;
+      font-size: 1rem;
+      font-weight: 600;
+      line-height: 24px;
+      padding-bottom: 5px;
+}
+
+.btn-banner {
+      width: 196px;
+      height: 44px;
+      border-radius: 41px;
+      background: rgb(224, 44, 109);
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 24px;
+      color: rgb(255, 255, 255);
+}
+
+.banner-image {
+      margin-right: 30px;
+      max-width: 29.68rem;
+      height: 475px;
+      background-image: url("../images/Circle\ design.svg");
+}
+
+.banner-image img {
+      width: 100%;
+      height: 414px;
+      align-items: center;
+      margin-top: 20px;
+      margin-left: 15px;
+}
+
+.banner-sponsar {
+      max-width: 1410px;
+      margin: 50px 50px;
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+}
+
+/* media quaries for mobile  */
+@media screen and (max-width:576px) {
+      .navbar{
+            flex-direction: column-reverse;
+            margin-bottom: 0px;
+      }
+      .banner-title{
+            text-align: center;
+      }
+      .banner-description{
+            text-align: center;
+      }
+      .banner-item{
+            flex-direction: column-reverse;
+            text-align: center;
+      }
+      .banner-sponsar{
+            grid-template-columns: repeat(4,1fr);
+            gap: 0px;
+            margin-left: 0px;
+            row-gap: 20px;
+      }
+}
