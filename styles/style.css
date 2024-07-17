@@ -203,8 +203,7 @@ card-item {
       letter-spacing: 0px;
       text-decoration: none;
       margin: 0 10px;
-      text-align: left;
-      margin-left: 45px;
+      text-align: center;
 }
 
 /* media quaries for mobile  */
@@ -249,6 +248,11 @@ card-item {
             grid-template-columns: repeat(1, 1fr);
             justify-items: center;
       }
+      .more-link{
+            text-align: left;
+            padding-left: 20px;
+      }
+      
 }
 
 /* media quaries for tablet */
@@ -293,5 +297,6 @@ card-item {
       }
       .more-link{
             text-align: left;
+            padding-left: 37px;
       }
 }
