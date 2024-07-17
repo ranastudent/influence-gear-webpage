@@ -206,6 +206,61 @@ card-item {
       text-align: center;
 }
 
+/* feature product section */
+.feature-product {
+      display: flex;
+      max-width: 1110px;
+      margin: 10px auto;
+      border: 1px solid red;
+      border-style: none;
+}
+
+.product-img {
+      width: 40%;
+      padding-left: 30px;
+      padding-right: 100px;
+}
+
+.product-title {
+      width: 50%;
+      padding: 20px;
+}
+
+.products-heading {
+      color: rgb(10, 8, 38);
+      font-family: Poppins;
+      font-size: 2.375rem;
+      font-weight: 700;
+      line-height: 60px;
+      letter-spacing: 0px;
+      text-align: left;
+}
+
+.product-description {
+      color: rgb(108, 108, 108);
+      font-family: Poppins;
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 28px;
+      letter-spacing: 0px;
+      text-align: left;
+      margin: 16px 0px;
+}
+
+.btn-join {
+      color: rgb(255, 255, 255);
+      font-family: Poppins;
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 0px;
+      text-align: center;
+      max-width: 200px;
+      height: 44px;
+      padding: 10px 24px 10px 24px;
+      background: rgb(224, 44, 109);
+}
+
 /* media quaries for mobile  */
 @media screen and (max-width:576px) {
       .navbar {
@@ -248,11 +303,26 @@ card-item {
             grid-template-columns: repeat(1, 1fr);
             justify-items: center;
       }
-      .more-link{
+
+      .more-link {
             text-align: left;
             padding-left: 20px;
       }
-      
+      .feature-product{
+            flex-direction: column-reverse;
+      }
+      .product-img {
+            width: 100%;
+            padding-left: 0px;
+            padding-right: 0px;
+            margin: 10px 0px;
+      }
+      .gear{
+            width: 100%;
+            padding-left: 0px;
+            padding-right: 0px;
+      }
+
 }
 
 /* media quaries for tablet */
@@ -281,7 +351,8 @@ card-item {
             flex-direction: column-reverse;
             text-align: center;
       }
-      .banner-image{
+
+      .banner-image {
             margin: 0 auto;
       }
 
@@ -291,11 +362,13 @@ card-item {
             margin-left: 0px;
             row-gap: 20px;
       }
+
       .card-items {
             grid-template-columns: repeat(2, 1fr);
             justify-items: center;
       }
-      .more-link{
+
+      .more-link {
             text-align: left;
             padding-left: 37px;
       }
