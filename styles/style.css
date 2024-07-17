@@ -202,8 +202,9 @@ card-item {
       line-height: 24px;
       letter-spacing: 0px;
       text-decoration: none;
-      margin-top: 10px;
+      margin: 0 10px;
       text-align: left;
+      margin-left: 45px;
 }
 
 /* media quaries for mobile  */
@@ -254,12 +255,14 @@ card-item {
 @media screen and (min-width:576px) and (max-width:993px) {
       .navbar {
             flex-direction: column-reverse;
-            margin-bottom: 0px;
+            margin: 0 auto;
       }
 
       .nav-links {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(6, 1fr);
+            margin: 10px auto;
+            margin-bottom: 50px;
       }
 
       .banner-title {
@@ -274,11 +277,21 @@ card-item {
             flex-direction: column-reverse;
             text-align: center;
       }
+      .banner-image{
+            margin: 0 auto;
+      }
 
       .banner-sponsar {
             grid-template-columns: repeat(4, 1fr);
             gap: 0px;
             margin-left: 0px;
             row-gap: 20px;
+      }
+      .card-items {
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+      }
+      .more-link{
+            text-align: left;
       }
 }
